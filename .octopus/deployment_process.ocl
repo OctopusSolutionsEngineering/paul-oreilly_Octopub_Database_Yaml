@@ -47,7 +47,7 @@ step "mysql-create-database-if-not-exists" {
             createUseSSL = "True"
             mySqlAuthenticationMethod = "usernamepassword"
             Octopus.Action.Template.Id = "ActionTemplates-3189"
-            Octopus.Action.Template.Version = "8"
+            Octopus.Action.Template.Version = "9"
         }
         worker_pool_variable = "Project.Worker.Pool"
     }
