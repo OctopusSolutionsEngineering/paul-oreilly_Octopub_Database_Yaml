@@ -1,0 +1,11 @@
+variable "Octopus.Azure.Account" {
+    type = "AzureAccount"
+
+    value "octopub-yaml" {}
+}
+
+variable "Project.Worker.Pool" {
+    type = "WorkerPool"
+
+    value "azure-worker-pool" {}
+}
