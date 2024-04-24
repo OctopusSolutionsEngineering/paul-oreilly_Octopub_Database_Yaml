@@ -924,6 +924,7 @@ step "flyway-database-migrations" {
             properties = {
                 Extract = "True"
                 PackageParameterName = "Flyway.Package.Value"
+                Purpose = ""
                 SelectionMode = "deferred"
             }
         }
