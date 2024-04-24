@@ -917,7 +917,7 @@ step "flyway-database-migrations" {
             image = "octopuslabs/flyway-workertools"
         }
 
-        packages "octopub.mysql.flyway" {
+        packages "Flyway.Package.Value" {
             acquisition_location = "Server"
             feed = "sales-maven-feed"
             package_id = "com.octopus:octopub.mysql.flyway"
