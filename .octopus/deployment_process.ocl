@@ -916,6 +916,17 @@ step "flyway-database-migrations" {
             feed = "docker-hub"
             image = "octopuslabs/flyway-workertools"
         }
+
+        packages "octopub.mysql.flyway" {
+            acquisition_location = "Server"
+            feed = "sales-maven-feed"
+            package_id = "com.octopus:octopub.mysql.flyway"
+            properties = {
+                Extract = "True"
+                Purpose = ""
+                SelectionMode = "immediate"
+            }
+        }
     }
 }
 
