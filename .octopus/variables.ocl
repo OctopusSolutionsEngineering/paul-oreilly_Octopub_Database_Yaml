@@ -7,7 +7,7 @@ variable "Project.Worker.Pool" {
 variable "Octopus.Azure.Account" {
     type = "AzureAccount"
 
-    value "octopub-yaml" {
+    value "demo-octopus-app" {
         action = ["create-namespace-if-not-exists"]
     }
 }
